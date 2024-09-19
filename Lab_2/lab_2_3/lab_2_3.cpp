@@ -1,6 +1,6 @@
 ﻿
 #include <iostream>
-#include <math.h>
+#include <cmath>
 
 using namespace std;
 
@@ -10,11 +10,11 @@ int main()
     setlocale(LC_ALL, "ru");
     double a, b, h;
 
-    cout << "Введите сторону a: " << endl;
+    cout << "Введите сторону a: ";
     cin >> a;
-    cout << "Введите сторону b: " << endl;
+    cout << "Введите сторону b: ";
     cin >> b;
-    cout << "Введите высоту (h): " << endl;
+    cout << "Введите высоту (h): ";
     cin >> h;
 
     double S = 0.5 * (a + b) * h;

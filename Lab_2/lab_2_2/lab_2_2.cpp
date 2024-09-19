@@ -1,5 +1,5 @@
 ﻿#include <iostream>
-#include <math.h>
+#include <cmath>
 
 using namespace std;
 
@@ -7,16 +7,16 @@ using namespace std;
 int main()
 {
     setlocale(LC_ALL, "ru");
-    double x, y, z;
+    double x, y, z, result;
 
-    cout << "Введите число x: " << endl;
+    cout << "Введите число x: ";
     cin >> x;
-    cout << "Введите число y: " << endl;
+    cout << "Введите число y: ";
     cin >> y;
-    cout << "Введите число z: " << endl;
+    cout << "Введите число z: ";
     cin >> z;
 
-    double result = log(pow(y, -sqrt(fabs(x)))) * (x-y/2) + pow(sin(atan(z)), 2);
+    result = log(pow(y, -sqrt(fabs(x)))) * (x-y/2) + pow(sin(atan(z)), 2);
 
     cout << "Результат: " << result << endl;
 }

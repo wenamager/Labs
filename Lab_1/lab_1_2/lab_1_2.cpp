@@ -1,19 +1,18 @@
-﻿
-
-#include <iostream>
-#include <math.h>
+﻿#include <iostream>
+#include <cmath>
 
 using namespace std;
 
 int main()
 {
     setlocale(LC_ALL, "ru");
+
     double x;
     const int A = 15;
     const int B = 7;
     const int C = 27;
 
-    cout << "Введите число x: " << endl;
+    cout << "Введите число x: ";
     cin >> x;
 
     double result = pow(x, 2) - A * x + B - C;
